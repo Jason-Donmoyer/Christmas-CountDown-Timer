@@ -1,3 +1,89 @@
+/******************** IMPORTS ********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Orbitron:wght@800&display=swap');
+
+
+/******************** GLOBAL STYLES ********************/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+/******************** VARIABLES ********************/
+
+:root {
+  /* Colors */
+  --crimson-red: #930101;
+  --electric-red: #df0000;
+  --anti-flash-white: #f2f2f2;
+  --gainsboro: #d9dfdc;
+  --opal: #b0bfc2;
+  --text-black: #232627;
+  /* Fonts */
+  --festive-font: 'Mountains of Christmas', cursive;
+  --clock-font: 'Orbitron', sans-serif;
+}
+
+/******************** LAYOUT AND BACKGROUND ********************/
+
 body {
-  background-color: green;
+  background-color: var(--gainsboro);
+  font-family: var(--festive-font);
+}
+
+.main-container {
+  background-color: var(--gainsboro);
+}
+
+#main-heading {
+  text-align: center;
+  padding-top: 2em;
+  color: var(--text-black);
+}
+
+.timer-container {
+  width: 90%;
+  height: 15em;
+  font-family: var(--clock-font);
+  font-size: .7em;
+  text-align: center;
+  background-color: var(--anti-flash-white);
+  margin: 8em auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.timer-element {
+  height: 12em;
+  width: 20%;
+}
+
+.number-holder {
+  height: 9em;
+  width: 100%;
+  line-height: 9em;
+  font-size: 1.1em;
+  background-color: var(--text-black);
+  color: var(--electric-red);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: .4em;
+}
+
+footer p {
+  font-size: .5em;
+  text-align: right;
+  color: var(--crimson-red);
 }
